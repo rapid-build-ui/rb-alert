@@ -1,0 +1,36 @@
+/******************
+ * RB-ALERT STYLES
+ ******************/
+// Sassy Goodness
+@import 'sass/functions.scss';
+@import 'sass/variables.scss';
+
+/* The Component
+ ****************/
+section {
+	// place common styles here
+
+	/* Kinds
+	 ********/
+	&.default {
+		color: #004085;
+		background-color: #cce5ff;
+	}
+
+	&.danger {
+
+	}
+
+	&.info {
+
+	}
+
+	&.success {
+		color: #155724;
+		background-color: #c3e6cb;
+	}
+
+	&.warning {
+
+	}
+}
