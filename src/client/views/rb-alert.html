@@ -1,5 +1,8 @@
 <section
-	class$="[[kind]]">
+	class$="[[kind]] [[_removable(removable)]]">
+	<button type="button" on-click="_remove">
+		<rb-icon kind="times" source="solid" title="Close"></rb-icon>
+	</button>
 	<slot></slot>
 </section>
 

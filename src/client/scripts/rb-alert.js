@@ -22,8 +22,24 @@ export class RbAlert extends PolymerElement {
 			kind: {
 				type: String,
 				value: 'default'
+			},
+			removable: {
+				type: Boolean,
+				value: false
 			}
 		}
+	}
+
+	/* Computed Bindings
+	 ********************/
+	_removable(removable) {
+		return removable ? 'removable' : null
+	}
+
+	/* Event Handlers
+	 *****************/
+	_remove() {
+		this.classList.add('hide');
 	}
 
 	/* Template
