@@ -1,7 +1,7 @@
 /***********
  * RB-ALERT
  ***********/
-import { Element as PolymerElement } from '../../../@polymer/polymer/polymer-element.js';
+import { PolymerElement, html } from '../../../@polymer/polymer/polymer-element.js';
 import template from '../views/rb-alert.html';
 
 export class RbAlert extends PolymerElement {
@@ -45,7 +45,7 @@ export class RbAlert extends PolymerElement {
 	/* Template
 	 ***********/
 	static get template() { // :string
-		return template;
+		return html template;
 	}
 }
 
