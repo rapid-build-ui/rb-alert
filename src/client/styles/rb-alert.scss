@@ -92,6 +92,7 @@ section {
 			outline: none;
 			cursor: pointer;
 			background: none;
+			color: inherit;
 			&:focus,
 			&:hover {
 				opacity: .5;
