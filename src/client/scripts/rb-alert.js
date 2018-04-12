@@ -11,10 +11,6 @@ export class RbAlert extends PolymerElement {
 		super();
 	}
 
-	ready() {
-		super.ready();
-	}
-
 	/* Properties
 	 *************/
 	static get properties() {
