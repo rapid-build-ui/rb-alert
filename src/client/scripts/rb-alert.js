@@ -2,6 +2,7 @@
  * RB-ALERT
  ***********/
 import { PolymerElement, html } from '../../../@polymer/polymer/polymer-element.js';
+import '../../rb-icon/scripts/rb-icon.js';
 import template from '../views/rb-alert.html';
 
 export class RbAlert extends PolymerElement {
