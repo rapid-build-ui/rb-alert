@@ -21,6 +21,7 @@ const Steps = paths => { // :{}
 			info(template.underline`begin: trigger showcase build`.toUpperCase().alert);
 			const opts = {
 				url: 'https://api.travis-ci.com/repo/travis-ci%rapid-build-ui/rapid-build-ui.io',
+				json: true,
 				headers: {
 					'content-type':      'application/json',
 					'accept':            'application/json',
