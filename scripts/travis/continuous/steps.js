@@ -16,7 +16,7 @@ const error = console.error.bind(console);
  ********/
 const Steps = paths => { // :{}
 	return {
-		triggerShowcaseBuild(TRAVIS_TOKEN) { // :Promise{} (runs asynchronously)
+		triggerShowcaseBuild(TRAVIS_TOKEN, REPO_NAME) { // :Promise{} (runs asynchronously)
 			info();
 			info(template.underline`begin showcase build trigger`.toUpperCase().alert);
 			const url  = 'https://api.travis-ci.org/repo/rapid-build-ui%2Frapid-build-ui.io/requests';
@@ -28,7 +28,10 @@ const Steps = paths => { // :{}
 					'authorization': `token ${TRAVIS_TOKEN}`
 				},
 				body: {
-					request: { branch: 'continuous' }
+					request: {
+						branch:  'continuous',
+						message: `REBUILD TRIGGERED - ${REPO_NAME}`
+					}
 				}
 			};
 			return post(opts).then(results => {
