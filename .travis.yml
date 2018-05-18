@@ -59,7 +59,7 @@ jobs:
         skip_cleanup: true
         email: rapidbuildui@yahoo.com
         on:
-          tags: true
+          branch: continuous
         api_key: $NPM_TOKEN
 
     # Release
