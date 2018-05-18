@@ -49,12 +49,18 @@ jobs:
     # ==========
     - if: branch = continuous
       before_script:
-        # STEPS (in order)
-        # ================
-        # Build Component
-        # Trigger Showcase Build
         - rapid-build prod publish
-        - node scripts/travis/continuous $RB_COMPONENT_DIR $TRAVIS_TOKEN $RB_REPO_NAME
+      before_deploy:
+        - cd $RB_COMPONENT_DIR/dist/client/ # run npm publish from here
+      after_deploy:
+        - cd $RB_COMPONENT_DIR
+      deploy:
+        provider: npm
+        skip_cleanup: true
+        email: rapidbuildui@yahoo.com
+        on:
+          tags: true
+        api_key: $NPM_TOKEN
 
     # Release
     # =======
