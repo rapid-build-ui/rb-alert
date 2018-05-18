@@ -23,7 +23,6 @@ const Steps = paths => { // :{}
 				url: 'https://api.travis-ci.org/repo/rapid-build-ui%2Frapid-build-ui.io/requests',
 				json: true,
 				headers: {
-					'accept':            'application/json',
 					'authorization':     `token ${TRAVIS_TOKEN}`,
 					'travis-api-version': '3'
 				},
