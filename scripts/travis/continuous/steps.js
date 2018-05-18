@@ -20,13 +20,13 @@ const Steps = paths => { // :{}
 			info();
 			info(template.underline`begin: trigger showcase build`.toUpperCase().alert);
 			const opts = {
-				url: 'https://api.travis-ci.com/repo/rapid-build-ui%rapid-build-ui.io/requests',
+				url: 'https://api.travis-ci.com/repo/rapid-build-ui%2Frapid-build-ui.io/requests',
 				json: true,
 				headers: {
-					'Content-Type':      'application/json',
-					'Accept':            'application/json',
-					'Travis-API-Version': '3',
-					'Authorization':     `token ${TRAVIS_TOKEN}`
+					'content-type':      'application/json',
+					'accept':            'application/json',
+					'travis-api-version': '3',
+					'authorization':     `token ${TRAVIS_TOKEN}`
 				},
 				body: {
 					request: {
