@@ -29,6 +29,7 @@ cache:
 # Install Global Dependencies
 # ===========================
 before_install:
+  - echo $TRAVIS_BRANCH
   - if [[ $(npm -v) != $NPM_VERSION ]]; then npm install -g npm@${NPM_VERSION}; fi # version check
   - if [[ -z $(command -v rapid-build) ]]; then npm install -g rapid-build@5; fi   # if not installed
 
