@@ -50,7 +50,7 @@ jobs:
     - if: branch = continuous
       before_script:
         - rapid-build prod publish
-      after_success:
+      script:
         # Trigger Showcase Build
         - node scripts/travis/continuous $RB_COMPONENT_DIR $TRAVIS_TOKEN $RB_REPO_NAME
 
