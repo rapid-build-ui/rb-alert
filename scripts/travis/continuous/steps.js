@@ -26,7 +26,7 @@ const Steps = paths => { // :{}
 					'Content-Type':      'application/json',
 					'Accept':            'application/json',
 					'Travis-API-Version': '3',
-					'Authorization':     `token ${process.env.TRAVIS_TOKEN}`
+					'Authorization':     `token ${TRAVIS_TOKEN}`
 				},
 				body: {
 					request: {
