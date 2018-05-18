@@ -18,23 +18,20 @@ const Steps = paths => { // :{}
 	return {
 		triggerShowcaseBuild(TRAVIS_TOKEN) { // :Promise{} (runs asynchronously)
 			info();
-			info(template.underline`begin: showcase build trigger`.toUpperCase().alert);
+			info(template.underline`begin showcase build trigger`.toUpperCase().alert);
+			const url  = 'https://api.travis-ci.org/repo/rapid-build-ui%2Frapid-build-ui.io/requests';
 			const opts = {
-				url: 'https://api.travis-ci.org/repo/rapid-build-ui%2Frapid-build-ui.io/requests',
+				url,
 				json: true,
 				headers: {
 					'travis-api-version': 3,
 					'authorization': `token ${TRAVIS_TOKEN}`
 				},
 				body: {
-					request: {
-						branch: 'continuous'
-					}
+					request: { branch: 'continuous' }
 				}
 			};
 			return post(opts).then(results => {
-				log('POST RESULTS:');
-				log(results);
 				info(`✔ showcase build triggered`.toUpperCase().success);
 				return results;
 			}).catch(e => {
