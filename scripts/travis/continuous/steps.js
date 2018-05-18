@@ -20,7 +20,7 @@ const Steps = paths => { // :{}
 			info();
 			info(template.underline`begin: trigger showcase build`.toUpperCase().alert);
 			const opts = {
-				url: 'https://api.travis-ci.com/repo/travis-ci%rapid-build-ui/rapid-build-ui.io',
+				url: 'https://api.travis-ci.com/repo/rapidbuildui%rapid-build-ui/rapid-build-ui.io',
 				json: true,
 				headers: {
 					'content-type':      'application/json',
@@ -37,7 +37,7 @@ const Steps = paths => { // :{}
 			return post(opts).then(results => {
 				log('POST RESULTS:');
 				log(results);
-				info(`✔ triggered showcase build`.toUpperCase().success);
+				info(`✔ showcase build triggered`.toUpperCase().success);
 				return results;
 			}).catch(e => {
 				error(template.underline`error: triggering showcase build`.toUpperCase().error);
