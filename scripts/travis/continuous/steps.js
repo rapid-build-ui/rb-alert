@@ -20,7 +20,7 @@ const Steps = paths => { // :{}
 			info();
 			info(template.underline`begin: trigger showcase build`.toUpperCase().alert);
 			const opts = {
-				url: 'https://api.travis-ci.com/repo/rapid-build-ui%2Frapid-build-ui.io/requests',
+				url: 'https://api.travis-ci.org/repo/rapid-build-ui%2Frapid-build-ui.io/requests',
 				json: true,
 				headers: {
 					'Content-Type':      'application/json',
