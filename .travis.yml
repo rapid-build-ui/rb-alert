@@ -19,9 +19,10 @@ node_js:
 env:
   global:
     # Versions
-    - NPM_VERSION="6.0.1"
+    - NPM_VERSION="6.1.0"
     # Directories
-    - RB_COMPONENT_DIR="$TRAVIS_BUILD_DIR"
+    - RB_PROJECT_DIR="$TRAVIS_BUILD_DIR"
+    - RB_DIST_DIR="dist/client"
     - RB_REPO_NAME="$TRAVIS_REPO_SLUG"
 
 cache:
@@ -55,19 +56,23 @@ jobs:
         # STEPS (in order)
         # ================
         # Build Component
+        # Copy Root Files To: dist/client/ (ex: LICENSE)
         # Trigger Showcase Build
-        - rapid-build prod publish
-        - node scripts/travis/continuous $RB_COMPONENT_DIR $TRAVIS_TOKEN $RB_REPO_NAME
+        - npm run build-continuous $RB_PROJECT_DIR $RB_DIST_DIR $RB_REPO_NAME $TRAVIS_TOKEN
 
     # Release
     # =======
     - if: tag =~ ^v(\d+\.)(\d+\.)(\d+)(-([A-Za-z]+\.)?(\d+\.)?(\d+\.)?(\d+))?$
       before_script:
-        - rapid-build prod publish
+        # STEPS (in order)
+        # ================
+        # Build Component
+        # Copy Root Files To: dist/client/ (ex: LICENSE)
+        - npm run build-release $RB_PROJECT_DIR $RB_DIST_DIR
       before_deploy:
-        - cd $RB_COMPONENT_DIR/dist/client/ # run npm publish from here
+        - cd $RB_PROJECT_DIR/$RB_DIST_DIR # run npm publish from here
       after_deploy:
-        - cd $RB_COMPONENT_DIR
+        - cd $RB_PROJECT_DIR
       deploy:
         provider: npm
         skip_cleanup: true
