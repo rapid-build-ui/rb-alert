@@ -8,7 +8,10 @@
     "relink": "npm run link && npm run unlink && npm run link",
     "install-client": "cd src/client/ && yarn install --ignore-engines",
     "install-server": "cd src/server/ && npm install",
-    "setup": "npm run install-client && npm run install-server && rapid-build && npm run relink"
+    "setup": "npm run install-client && npm run install-server && rapid-build && npm run relink",
+    "bump-client": "cd src/client/ && npm version patch --no-git-tag-version",
+    "bump-server": "cd src/server/ && npm version patch --no-git-tag-version",
+    "bump": "npm run bump-client && npm run bump-server"
   },
   "dependencies": {
     "@rapid-build-ui/utils": "*"
