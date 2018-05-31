@@ -1,17 +1,16 @@
 {
-  "name": "rb-alert-proj",
+  "name": "rb-alert-project",
+  "version": "0.0.4",
   "scripts": {
-    "build-continuous": "node node_modules/@rapid-build-ui/utils/ci/build component continuous",
-    "build-release": "node node_modules/@rapid-build-ui/utils/ci/build component release",
+    "build-continuous": "node node_modules/@rapid-build-ui/utils/ci component continuous",
+    "build-release": "node node_modules/@rapid-build-ui/utils/ci component release",
+    "bump": "node node_modules/@rapid-build-ui/utils/bump component patch",
     "link": "cd dist/client/ && yarn link",
     "unlink": "cd dist/client/ && yarn unlink",
     "relink": "npm run link && npm run unlink && npm run link",
     "install-client": "cd src/client/ && yarn install --ignore-engines",
     "install-server": "cd src/server/ && npm install",
-    "setup": "npm run install-client && npm run install-server && rapid-build && npm run relink",
-    "bump-client": "cd src/client/ && npm version patch --no-git-tag-version",
-    "bump-server": "cd src/server/ && npm version patch --no-git-tag-version",
-    "bump": "npm run bump-client && npm run bump-server"
+    "setup": "npm run install-client && npm run install-server && rapid-build && npm run relink"
   },
   "dependencies": {
     "@rapid-build-ui/utils": "*"
