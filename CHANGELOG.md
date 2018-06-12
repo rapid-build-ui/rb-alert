@@ -1,3 +1,10 @@
+## [0.0.7](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.6...v0.0.7) (2018-06-12)
+
+
+Release contains Travis CI automation updates via npm package @rapid-build-ui/utils v0.0.6.
+
+
+
 ## [0.0.6](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.5...v0.0.6) (2018-06-07)
 
 
