@@ -49,7 +49,7 @@ jobs:
       before_script:
         # build component
         # copy root files to: dist/client/ (ex: LICENSE)
-        # trigger showcase build
+        # trigger showcase ci build
         - npm run build-continuous
 
     # Release
