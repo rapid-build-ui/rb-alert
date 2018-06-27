@@ -6,7 +6,7 @@ import { html, withRenderer } from './renderer.js';
 import '../../rb-button/scripts/rb-button.js';
 import template from '../views/rb-alert.html';
 
-class RbAlert extends withComponent(withRenderer()) {
+export class RbAlert extends withComponent(withRenderer()) {
 	static get props() {
 		return {
 			kind: props.string,
