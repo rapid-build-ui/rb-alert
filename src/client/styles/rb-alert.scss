@@ -76,16 +76,16 @@ section {
 	/* Options
 	 **********/
 	&:not(.removable) {
-		button {
+		rb-button {
 			display: none;
 		}
 	}
 	&.removable {
 		padding-right: remy(35);
 
-		button {
+		rb-button {
 			position: absolute;
-			top: 15px;
+			top: 10px;
 			right: 15px;
 			padding: 0;
 			border: none;
@@ -101,11 +101,9 @@ section {
 				opacity: .7;
 			}
 		}
-	}
-}
 
-/* Removable
- ************/
-:host(.hide) {
-	display: none !important;
+		&.hidden {
+			display: none !important;
+		}
+	}
 }

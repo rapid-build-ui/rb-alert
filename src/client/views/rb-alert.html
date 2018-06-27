@@ -1,8 +1,15 @@
 <section
-	class$="[[kind]] [[_removable(removable)]]">
-	<button type="button" on-click="_remove">
-		<rb-icon kind="times" source="solid" title="Remove"></rb-icon>
-	</button>
+	class$="
+		${props.kind || 'default'}
+		${props.removable ? 'removable' : ''}
+		${state.hidden ? 'hidden' : ''}
+	">
+	<rb-button
+		kind="text"
+		icon="times"
+		icon-source="solid"
+		on-click="${this._remove.bind(this)}">
+	</rb-button>
 	<slot></slot>
 </section>
 
