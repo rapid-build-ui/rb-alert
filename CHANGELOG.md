@@ -1,3 +1,10 @@
+## [0.0.9](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.8...v0.0.9) (2018-07-08)
+
+
+Release switches web components library Polymer 3 to [SkateJS](http://skatejs.netlify.com/) and view renderer [lit-html](https://polymer.github.io/lit-html/).
+
+
+
 ## [0.0.8](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.7...v0.0.8) (2018-06-22)
 
 
