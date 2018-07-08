@@ -1,47 +1,38 @@
 /***********
  * RB-ALERT
  ***********/
-import { PolymerElement, html } from '../../../@polymer/polymer/polymer-element.js';
-import '../../rb-icon/scripts/rb-icon.js';
+import { props, withComponent } from '../../../skatejs/dist/esnext/index.js';
+import { html, withRenderer } from './renderer.js';
+import '../../rb-button/scripts/rb-button.js';
 import template from '../views/rb-alert.html';
 
-export class RbAlert extends PolymerElement {
+export class RbAlert extends withComponent(withRenderer()) {
+	static get props() {
+		return {
+			kind: props.string,
+			removable: props.boolean
+		};
+	}
+
 	/* Lifecycle
 	 ************/
 	constructor() {
 		super();
-	}
-
-	/* Properties
-	 *************/
-	static get properties() {
-		return {
-			kind: {
-				type: String,
-				value: 'default'
-			},
-			removable: {
-				type: Boolean,
-				value: false
-			}
-		}
-	}
-
-	/* Computed Bindings
-	 ********************/
-	_removable(removable) {
-		return removable ? 'removable' : null
+		this.state = {
+			hidden: false
+		};
 	}
 
 	/* Event Handlers
 	 *****************/
 	_remove() {
-		this.classList.add('hide');
+		this.state.hidden = true;
+		this.triggerUpdate();
 	}
 
 	/* Template
 	 ***********/
-	static get template() { // :string
+	render({ props, state }) {
 		return html template;
 	}
 }
