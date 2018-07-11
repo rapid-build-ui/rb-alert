@@ -1,3 +1,11 @@
+## [0.0.10](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.9...v0.0.10) (2018-07-11)
+
+
+Release contains:
+* bump deps: skatejs v5.2.1 and rb-button v0.0.6
+
+
+
 ## [0.0.9](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.8...v0.0.9) (2018-07-08)
 
 
