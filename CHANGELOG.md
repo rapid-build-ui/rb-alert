@@ -1,3 +1,10 @@
+## [0.0.11](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.10...v0.0.11) (2018-07-18)
+
+
+Release only includes bumping rb-button to [v0.0.7](https://git.io/fNZJu).
+
+
+
 ## [0.0.10](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.9...v0.0.10) (2018-07-11)
 
 
