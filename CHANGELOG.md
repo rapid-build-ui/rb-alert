@@ -1,3 +1,12 @@
+## [0.0.12](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.11...v0.0.12) (2018-08-30)
+
+
+### Dependency Updates
+
+* **rb-base:** replace deps lit-html and skatejs with @rapid-build-ui/rb-base and make corresponding updates ([503ea77](https://github.com/rapid-build-ui/rb-alert/commit/503ea77))
+
+
+
 ## [0.0.11](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.10...v0.0.11) (2018-07-18)
 
 
