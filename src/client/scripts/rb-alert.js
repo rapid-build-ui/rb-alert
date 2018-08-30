@@ -1,25 +1,26 @@
 /***********
  * RB-ALERT
  ***********/
-import { props, withComponent } from '../../../skatejs/dist/esnext/index.js';
-import { html, withRenderer } from './renderer.js';
+import { props, html, RbBase } from '../../rb-base/scripts/rb-base.js';
 import '../../rb-button/scripts/rb-button.js';
 import template from '../views/rb-alert.html';
 
-export class RbAlert extends withComponent(withRenderer()) {
-	static get props() {
-		return {
-			kind: props.string,
-			removable: props.boolean
-		};
-	}
-
+export class RbAlert extends RbBase() {
 	/* Lifecycle
 	 ************/
 	constructor() {
 		super();
 		this.state = {
 			hidden: false
+		};
+	}
+
+	/* Properties
+	 *************/
+	static get props() {
+		return {
+			kind: props.string,
+			removable: props.boolean
 		};
 	}
 
