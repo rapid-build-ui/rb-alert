@@ -1,3 +1,12 @@
+## [0.0.13](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.12...v0.0.13) (2018-09-05)
+
+
+### Dependency Updates
+
+* **rb-base:** bump to v0.0.2 ([4e3f19f](https://github.com/rapid-build-ui/rb-alert/commit/4e3f19f))
+
+
+
 ## [0.0.12](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.11...v0.0.12) (2018-08-30)
 
 
