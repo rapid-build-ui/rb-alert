@@ -1,5 +1,5 @@
 <section
-	class$="
+	class="
 		${props.kind || 'default'}
 		${props.removable ? 'removable' : ''}
 		${state.hidden ? 'hidden' : ''}
@@ -8,7 +8,7 @@
 		kind="text"
 		icon="times"
 		icon-source="solid"
-		on-click="${this._remove.bind(this)}">
+		@click="${this._remove.bind(this)}">
 	</rb-button>
 	<slot></slot>
 </section>
