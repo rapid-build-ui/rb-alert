@@ -1,3 +1,14 @@
+## [0.0.14](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.13...v0.0.14) (2018-09-14)
+
+
+### Dependency Updates
+
+* **bump deps:** ([d7449a4](https://github.com/rapid-build-ui/rb-alert/commit/d7449a4))
+	* **rb-base** to v0.0.3
+	* **rb-button** to v0.0.10
+
+
+
 ## [0.0.13](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.12...v0.0.13) (2018-09-05)
 
 

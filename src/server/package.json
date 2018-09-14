@@ -1,6 +1,6 @@
 {
   "name": "rb-alert-server",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "main": "routes.js",
   "description": "Rapid Build UI Web Component Server: rb-alert",
   "license": "MIT",
