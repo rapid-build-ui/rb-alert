@@ -1,7 +1,16 @@
+## [0.0.15](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.14...v0.0.15) (2018-09-26)
+
+
+### Dependencies
+
+* **bump:** deps rb-base v0.0.4 and rb-button v0.0.11 ([e3108ff](https://github.com/rapid-build-ui/rb-alert/commit/e3108ff))
+
+
+
 ## [0.0.14](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.13...v0.0.14) (2018-09-14)
 
 
-### Dependency Updates
+### Dependencies
 
 * **bump deps:** ([d7449a4](https://github.com/rapid-build-ui/rb-alert/commit/d7449a4))
 	* **rb-base** to v0.0.3
@@ -12,7 +21,7 @@
 ## [0.0.13](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.12...v0.0.13) (2018-09-05)
 
 
-### Dependency Updates
+### Dependencies
 
 * **rb-base:** bump to v0.0.2 ([4e3f19f](https://github.com/rapid-build-ui/rb-alert/commit/4e3f19f))
 
@@ -21,7 +30,7 @@
 ## [0.0.12](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.11...v0.0.12) (2018-08-30)
 
 
-### Dependency Updates
+### Dependencies
 
 * **rb-base:** replace deps lit-html and skatejs with @rapid-build-ui/rb-base and make corresponding updates ([503ea77](https://github.com/rapid-build-ui/rb-alert/commit/503ea77))
 
