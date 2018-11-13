@@ -1,3 +1,17 @@
+## [0.0.16](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.15...v0.0.16) (2018-11-13)
+
+
+### Features
+
+* **css variables:** add color variables ([fd84ee1](https://github.com/rapid-build-ui/rb-alert/commit/fd84ee1))
+
+
+### Dependencies
+
+* **bump:** deps rb-base v0.0.5 and rb-button v0.0.12 ([8fbab81](https://github.com/rapid-build-ui/rb-alert/commit/8fbab81))
+
+
+
 ## [0.0.15](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.14...v0.0.15) (2018-09-26)
 
 
