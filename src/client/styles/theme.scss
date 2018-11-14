@@ -29,6 +29,6 @@
 	// border-width
 	--border-width: var(--rb-alert-border-width, 1px);
 
-	//  border-style
-	--border-style: var(--rb-alert-border-style, solid);
+	// border-style (underscore used to hide from build minifier)
+	--border_style: var(--rb-alert-border-style, solid);
 }

@@ -14,7 +14,7 @@ section {
 	position: relative;
 	padding: remy(10) remy(15);
 	border-width: var(--border-width);
-	border-style: var(--border-style);
+	border-style: var(--border_style);
 	border-radius: var(--border-radius);
 
 	::slotted(hr) {
