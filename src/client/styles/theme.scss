@@ -22,4 +22,13 @@
 	--danger-border-color: var(--rb-alert-danger-border-color, #f5c6cb);
 	--warning-border-color: var(--rb-alert-warning-border-color, #ffeeba);
 	--info-border-color: var(--rb-alert-info-border-color, #bee5eb);
+
+	// border-radius
+	--border-radius: var(--rb-alert-border-radius, 4px);
+
+	// border-width
+	--border-width: var(--rb-alert-border-width, 1px);
+
+	//  border-style
+	--border-style: var(--rb-alert-border-style, solid);
 }
