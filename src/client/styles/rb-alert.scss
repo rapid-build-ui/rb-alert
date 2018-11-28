@@ -65,6 +65,14 @@ section {
 		@include hr($bg);
 	}
 
+	&.secondary {
+		$bg: #d4edda;
+		color: var(--secondary-color);
+		border-color: var(--secondary-border-color);
+		background-color: var(--secondary-bg-color);
+		@include hr($bg);
+	}
+
 	&.warning {
 		$bg: #fff3cd;
 		color: var(--warning-color);
