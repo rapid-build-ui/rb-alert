@@ -1,10 +1,9 @@
 /******************
  * RB-ALERT STYLES
  ******************/
-// Sassy Goodness
 @import 'sass/functions.scss';
-@import 'sass/variables.scss';
-@import 'theme.scss';
+@import 'main/variables.scss';
+@import 'main/host.scss';
 
 /* The Component
  ****************/
@@ -13,9 +12,9 @@ section {
 	 *********/
 	position: relative;
 	padding: remy(10) remy(15);
-	border-width: 1px;
-	border-style: solid;
-	border-radius: 4px;
+	border-width: var(--border-width);
+	border-style: var(--border-type);
+	border-radius: var(--border-radius);
 
 	::slotted(hr) {
 		margin: remy(16) 0 !important;
@@ -63,6 +62,14 @@ section {
 		color: var(--success-color);
 		border-color: var(--success-border-color);
 		background-color: var(--success-bg-color);
+		@include hr($bg);
+	}
+
+	&.secondary {
+		$bg: #d4edda;
+		color: var(--secondary-color);
+		border-color: var(--secondary-border-color);
+		background-color: var(--secondary-bg-color);
 		@include hr($bg);
 	}
 
