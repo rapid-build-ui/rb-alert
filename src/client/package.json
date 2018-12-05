@@ -1,6 +1,6 @@
 {
   "name": "@rapid-build-ui/rb-alert",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "main": "scripts/rb-alert.js",
   "description": "Rapid Build UI Web Component: rb-alert",
   "license": "MIT",

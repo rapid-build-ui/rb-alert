@@ -1,3 +1,24 @@
+## [0.0.17](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.16...v0.0.17) (2018-12-05)
+
+
+### Features
+
+* **css variables:** add border radius, width and style ([2888c6e](https://github.com/rapid-build-ui/rb-alert/commit/2888c6e))
+* **hidden attribute:** display style that respects the hidden attribute ([13fb797](https://github.com/rapid-build-ui/rb-alert/commit/13fb797))
+* **rb-alert:** add secondary as kind ([64a651d](https://github.com/rapid-build-ui/rb-alert/commit/64a651d))
+
+
+### Performance Improvements
+
+* **css:** improve browser performance by adding css contain property ([aae2ed0](https://github.com/rapid-build-ui/rb-alert/commit/aae2ed0))
+
+
+### Dependencies
+
+* **bump:** deps rb-base v0.0.6 and rb-button v0.0.13 ([30599ea](https://github.com/rapid-build-ui/rb-alert/commit/30599ea))
+
+
+
 ## [0.0.16](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.15...v0.0.16) (2018-11-13)
 
 
