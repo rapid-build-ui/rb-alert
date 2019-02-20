@@ -1,0 +1,23 @@
+/********************************************
+ * COMMON STYLES (for light and dark themes)
+ ********************************************/
+@mixin setCommonStyles() {
+	// Common For All Kinds (root tag)
+	section {
+		border-radius: mapGet($vars, common, border-radius);
+		border-style: mapGet($vars, common, border-style);
+		border-width: mapGet($vars, common, border-width);
+	}
+
+	// Kinds
+	$kinds: default, danger, info, success, secondary, warning;
+	@each $kind in $kinds {
+		.#{$kind} {
+			background-color: mapGet($vars, common, #{$kind}-bg);
+			border-color: mapGet($vars, common, #{$kind}-border-color);
+			color: mapGet($vars, common, #{$kind}-text-color);
+		}
+	}
+}
+
+@include setCommonStyles();

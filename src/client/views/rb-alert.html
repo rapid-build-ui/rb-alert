@@ -4,12 +4,16 @@
 		${props.removable ? 'removable' : ''}
 		${state.hidden ? 'hidden' : ''}
 	">
-	<rb-button
-		kind="text"
-		icon-kind="times"
-		icon-source="solid"
-		@click="${this._remove.bind(this)}">
-	</rb-button>
+	${props.removable
+		? html`
+			<rb-button
+				kind="text"
+				icon-kind="times"
+				icon-source="solid"
+				@click="${this._remove.bind(this)}">
+			</rb-button>
+		` : null
+	}
 	<slot></slot>
 </section>
 
