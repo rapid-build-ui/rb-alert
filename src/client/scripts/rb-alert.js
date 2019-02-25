@@ -1,9 +1,9 @@
 /***********
  * RB-ALERT
  ***********/
-import { props, html, RbBase } from '../../rb-base/scripts/rb-base.js';
+import { RbBase, props, html } from '../../rb-base/scripts/rb-base.js';
+import template                from '../views/rb-alert.html';
 import '../../rb-button/scripts/rb-button.js';
-import template from '../views/rb-alert.html';
 
 export class RbAlert extends RbBase() {
 	/* Lifecycle

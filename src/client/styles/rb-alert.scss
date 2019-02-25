@@ -1,117 +1,19 @@
-/******************
- * RB-ALERT STYLES
- ******************/
+/******************************
+ * RB-ALERT STYLES - IN ORDER!
+ ******************************/
 @import 'sass/functions.scss';
-@import 'main/variables.scss';
-@import 'main/host.scss';
 
-/* The Component
- ****************/
-section {
-	/* Common
-	 *********/
-	position: relative;
-	padding: remy(10) remy(15);
-	border-width: var(--border-width);
-	border-style: var(--border-type);
-	border-radius: var(--border-radius);
+/* Layout
+ *********/
+@import 'layout/host.scss';
+@import 'layout/common.scss';
 
-	::slotted(hr) {
-		margin: remy(16) 0 !important;
-		border: none !important;
-		border-top-style: solid !important;
-		border-top-width: 1px !important;
-	}
+/* CSS Style Variables
+ **********************/
+@import 'sass/palette.scss';
+@import 'variables/common.scss';
+@import 'sass/css-vars.scss';
 
-	/* Mixins
-	 *********/
-	@mixin hr($bg) {
-		::slotted(hr) {
-			border-top-color: darken($bg, 10) !important;
-		}
-	}
-
-	/* Kinds
-	 ********/
-	&.default {
-		$bg: #cce5ff;
-		color: var(--default-color);
-		border-color: var(--default-border-color);
-		background-color: var(--default-bg-color);
-		@include hr($bg);
-	}
-
-	&.danger {
-		$bg: #f8d7da;
-		color: var(--danger-color);
-		border-color: var(--danger-border-color);
-		background-color: var(--danger-bg-color);
-		@include hr($bg);
-	}
-
-	&.info {
-		$bg : #d1ecf1;
-		color: var(--info-color);
-		border-color: var(--info-border-color);
-		background-color: var(--info-bg-color);
-		@include hr($bg);
-	}
-
-	&.success {
-		$bg: #d4edda;
-		color: var(--success-color);
-		border-color: var(--success-border-color);
-		background-color: var(--success-bg-color);
-		@include hr($bg);
-	}
-
-	&.secondary {
-		$bg: #d4edda;
-		color: var(--secondary-color);
-		border-color: var(--secondary-border-color);
-		background-color: var(--secondary-bg-color);
-		@include hr($bg);
-	}
-
-	&.warning {
-		$bg: #fff3cd;
-		color: var(--warning-color);
-		border-color: var(--warning-border-color);
-		background-color: var(--warning-bg-color);
-		@include hr($bg);
-	}
-
-	/* Options
-	 **********/
-	&:not(.removable) {
-		rb-button {
-			display: none;
-		}
-	}
-	&.removable {
-		padding-right: remy(35);
-
-		rb-button {
-			position: absolute;
-			top: 10px;
-			right: 15px;
-			padding: 0;
-			border: none;
-			outline: none;
-			cursor: pointer;
-			background: none;
-			color: inherit;
-			&:focus,
-			&:hover {
-				opacity: .5;
-			}
-			&:active {
-				opacity: .7;
-			}
-		}
-
-		&.hidden {
-			display: none !important;
-		}
-	}
-}
+/* Styles
+ *********/
+@import 'style/common.scss';
