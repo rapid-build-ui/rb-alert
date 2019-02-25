@@ -1,3 +1,17 @@
+## [0.0.18](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.17...v0.0.18) (2019-02-25)
+
+
+### Features
+
+* **display:** set host to block and add a bottom bumper ([26a71a2](https://github.com/rapid-build-ui/rb-alert/commit/26a71a2))
+
+
+### Dependencies
+
+* **bump:** deps rb-base v0.0.7 and rb-button v0.0.14 ([f2a9152](https://github.com/rapid-build-ui/rb-alert/commit/f2a9152))
+
+
+
 ## [0.0.17](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.16...v0.0.17) (2018-12-05)
 
 
