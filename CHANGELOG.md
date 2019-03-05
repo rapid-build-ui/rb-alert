@@ -1,3 +1,12 @@
+## [0.0.19](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.18...v0.0.19) (2019-03-05)
+
+
+### Dependencies
+
+* **bump:** deps rb-base v0.0.8 and rb-button v0.0.15 ([fb21405](https://github.com/rapid-build-ui/rb-alert/commit/fb21405))
+
+
+
 ## [0.0.18](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.17...v0.0.18) (2019-02-25)
 
 
