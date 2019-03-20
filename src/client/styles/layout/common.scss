@@ -17,11 +17,8 @@ section {
 	&.removable {
 		rb-button {
 			position: absolute;
-			top: 1px;
+			top: 0;
 			right: 4px;
-			&:focus,
-			&:hover { opacity: .5; }
-			&:active { opacity: .7; }
 		}
 
 		&.hidden {

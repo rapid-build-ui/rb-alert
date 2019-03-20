@@ -2,6 +2,7 @@
  * RB-ALERT
  ***********/
 import { RbBase, props, html } from '../../rb-base/scripts/rb-base.js';
+import Converter               from '../../rb-base/scripts/public/props/converters.js';
 import template                from '../views/rb-alert.html';
 import '../../rb-button/scripts/rb-button.js';
 
@@ -19,8 +20,12 @@ export class RbAlert extends RbBase() {
 	 *************/
 	static get props() {
 		return {
-			kind: props.string,
-			removable: props.boolean
+			kind: Object.assign({}, props.string, {
+				default: 'default'
+			}),
+			removable: Object.assign({}, props.boolean, {
+				deserialize: Converter.valueless
+			})
 		};
 	}
 

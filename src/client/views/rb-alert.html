@@ -1,15 +1,15 @@
 <section
 	class="
-		${props.kind || 'default'}
+		${props.kind}
 		${props.removable ? 'removable' : ''}
 		${state.hidden ? 'hidden' : ''}
 	">
 	${props.removable
 		? html`
 			<rb-button
-				kind="text"
 				icon-kind="times"
 				icon-source="solid"
+				text='{ "inherit": "color" }'
 				@click="${this._remove.bind(this)}">
 			</rb-button>
 		` : null

@@ -10,7 +10,7 @@
 	}
 
 	// Kinds
-	$kinds: default, danger, info, success, secondary, warning;
+	$kinds: default, danger, info, neutral, success, warning;
 	@each $kind in $kinds {
 		.#{$kind} {
 			background-color: mapGet($vars, common, #{$kind}-bg);
