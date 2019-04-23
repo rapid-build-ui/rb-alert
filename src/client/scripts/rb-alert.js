@@ -9,11 +9,12 @@ import '../../rb-button/scripts/rb-button.js';
 export class RbAlert extends RbBase() {
 	/* Lifecycle
 	 ************/
-	constructor() {
-		super();
-		this.state = {
-			hidden: false
-		};
+	viewReady() { // :void
+		super.viewReady && super.viewReady();
+		Object.assign(this.rb.elms, {
+			rbButton: this.shadowRoot.querySelector('rb-button')
+		});
+		this._attachEvents();
 	}
 
 	/* Properties
@@ -29,16 +30,22 @@ export class RbAlert extends RbBase() {
 		};
 	}
 
+	/* Event Management
+	 *******************/
+	_attachEvents() { // :void
+		this.rb.elms.rbButton.onclick = this._remove.bind(this);
+	}
+
 	/* Event Handlers
 	 *****************/
-	_remove() {
-		this.state.hidden = true;
-		this.triggerUpdate();
+	_remove() { // :void
+		if (!this.removable) return;
+		this.setAttribute('rb-hide',''); // see rb-base -> styles.js
 	}
 
 	/* Template
 	 ***********/
-	render({ props, state }) {
+	render({ props }) {
 		return html template;
 	}
 }

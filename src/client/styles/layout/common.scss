@@ -5,6 +5,8 @@ section {
 	position: relative;
 	padding: 10px 15px;
 
+	/* Slot
+	 *******/
 	::slotted(hr) {
 		margin: 16px 0 !important;
 		border: none !important;
@@ -12,17 +14,18 @@ section {
 		opacity: .15 !important;
 	}
 
-	/* Options
-	 **********/
-	&.removable {
-		rb-button {
-			position: absolute;
-			top: 0;
-			right: 4px;
-		}
+	/* Removable Option
+	 *******************/
+	rb-button {
+		position: absolute;
+		top: -3px;
+		right: 1px;
+		--rb-button-text-button-opacity: .75;
+	}
 
-		&.hidden {
-			display: none !important;
+	&:not(.removable) {
+		rb-button {
+			display: none;
 		}
 	}
 }
