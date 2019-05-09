@@ -1,3 +1,17 @@
+## [0.0.20](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.19...v0.0.20) (2019-05-09)
+
+
+### Features
+
+* **new api option:** inline ([6c72027](https://github.com/rapid-build-ui/rb-alert/commit/6c72027))
+
+
+### Dependencies
+
+* **bump:** deps rb-base v0.0.9 and rb-button v0.0.16 ([713b3c7](https://github.com/rapid-build-ui/rb-alert/commit/713b3c7))
+
+
+
 ## [0.0.19](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.18...v0.0.19) (2019-03-05)
 
 
