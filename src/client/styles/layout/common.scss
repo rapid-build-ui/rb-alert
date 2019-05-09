@@ -3,8 +3,10 @@
  *********/
 section {
 	position: relative;
-	padding: 10px 15px;
+	padding: 11px 15px 12px;
 
+	/* Slot
+	 *******/
 	::slotted(hr) {
 		margin: 16px 0 !important;
 		border: none !important;
@@ -12,20 +14,22 @@ section {
 		opacity: .15 !important;
 	}
 
-	/* Options
-	 **********/
-	&.removable {
-		rb-button {
-			position: absolute;
-			top: 1px;
-			right: 4px;
-			&:focus,
-			&:hover { opacity: .5; }
-			&:active { opacity: .7; }
-		}
+	/* Removable Option
+	 *******************/
+	rb-button {
+		position: absolute;
+		top: -3px;
+		right: 2px;
+		--rb-button-text-button-opacity: .75;
+	}
 
-		&.hidden {
-			display: none !important;
+	&:not(.removable) {
+		rb-button {
+			display: none;
 		}
+	}
+
+	&.removable {
+		padding-right: 21px;
 	}
 }
