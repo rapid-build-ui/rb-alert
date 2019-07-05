@@ -1,3 +1,22 @@
+## [0.0.21](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.20...v0.0.21) (2019-07-05)
+
+
+### Bug Fixes
+
+* **popover:** from getting cut off ([e2e83c6](https://github.com/rapid-build-ui/rb-alert/commit/e2e83c6))
+
+
+### Features
+
+* **version:** add to component properties accessible via this.version ([f75c554](https://github.com/rapid-build-ui/rb-alert/commit/f75c554))
+
+
+### Dependencies
+
+* **bump:** deps rb-base v0.0.10 and rb-button v0.0.17 ([c7b5a1b](https://github.com/rapid-build-ui/rb-alert/commit/c7b5a1b))
+
+
+
 ## [0.0.20](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.19...v0.0.20) (2019-05-09)
 
 
