@@ -9,6 +9,10 @@ import '../../rb-button/scripts/rb-button.js';
 export class RbAlert extends RbBase() {
 	/* Lifecycle
 	 ************/
+	constructor() {
+		super();
+		this.version = '0.0.20';
+	}
 	viewReady() { // :void
 		super.viewReady && super.viewReady();
 		Object.assign(this.rb.elms, {
