@@ -11,7 +11,7 @@ export class RbAlert extends RbBase() {
 	 ************/
 	constructor() {
 		super();
-		this.version = '0.0.21';
+		this.version = '0.0.22';
 	}
 	viewReady() { // :void
 		super.viewReady && super.viewReady();
