@@ -1,8 +1,8 @@
 /***********
  * RB-ALERT
  ***********/
-import { RbBase, props, html } from '../../rb-base/scripts/rb-base.js';
-import Converter               from '../../rb-base/scripts/public/props/converters.js';
+import { RbBase, props, html } from '../../base/scripts/base.js';
+import Converter               from '../../base/scripts/public/props/converters.js';
 import template                from '../views/rb-alert.html';
 import '../../rb-button/scripts/rb-button.js';
 
@@ -44,7 +44,7 @@ export class RbAlert extends RbBase() {
 	 *****************/
 	_remove() { // :void
 		if (!this.removable) return;
-		this.setAttribute('rb-hide',''); // see rb-base -> styles.js
+		this.setAttribute('rb-hide',''); // see base -> styles.js
 	}
 
 	/* Template
