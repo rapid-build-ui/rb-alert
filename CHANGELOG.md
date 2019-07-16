@@ -1,3 +1,12 @@
+## [0.0.23](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.22...v0.0.23) (2019-07-16)
+
+
+### Dependencies
+
+* **bump:** deps rb ([b522f4d](https://github.com/rapid-build-ui/rb-alert/commit/b522f4d))
+
+
+
 ## [0.0.22](https://github.com/rapid-build-ui/rb-alert/compare/v0.0.21...v0.0.22) (2019-07-12)
 
 
