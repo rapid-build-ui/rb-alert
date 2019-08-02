@@ -9,26 +9,26 @@ $commonCssVars: (
 	border-width:  1px,
 
 	// Background Colors
-	default-bg: mapGet($palette, xBlueLight),
-	danger-bg:  mapGet($palette, xRedLight),
-	info-bg:    mapGet($palette, xTurquoiseLight),
-	neutral-bg: mapGet($palette, xGreyLight),
-	success-bg: mapGet($palette, xGreenLight),
-	warning-bg: mapGet($palette, xYellowLight),
+	default-bg: mapGet($palette, periwinkle),
+	danger-bg:  mapGet($palette, palePink),
+	info-bg:    mapGet($palette, azureishWhite),
+	neutral-bg: mapGet($palette, platinum),
+	success-bg: mapGet($palette, gainsboro),
+	warning-bg: mapGet($palette, lemonChiffon),
 
 	// Border Colors
-	default-border-color: mapGet($palette, blueLight),
-	danger-border-color:  mapGet($palette, redLight),
-	info-border-color:    mapGet($palette, turquoiseLight),
-	neutral-border-color: mapGet($palette, greyLight),
-	success-border-color: mapGet($palette, greenLight),
-	warning-border-color: mapGet($palette, yellowLight),
+	default-border-color: mapGet($palette, diamond),
+	danger-border-color:  mapGet($palette, teaRose),
+	info-border-color:    mapGet($palette, blueLagoon),
+	neutral-border-color: mapGet($palette, lightGray),
+	success-border-color: mapGet($palette, teaGreen),
+	warning-border-color: mapGet($palette, blond),
 
 	// Colors
-	default-text-color: mapGet($palette, blue),
-	danger-text-color:  mapGet($palette, red),
-	info-text-color:    mapGet($palette, turquoise),
-	neutral-text-color: mapGet($palette, grey),
-	success-text-color: mapGet($palette, green),
-	warning-text-color: mapGet($palette, yellow)
+	default-text-color: mapGet($palette, darkCerulean),
+	danger-text-color:  mapGet($palette, prune),
+	info-text-color:    mapGet($palette, midnightGreen),
+	neutral-text-color: mapGet($palette, blackOlive),
+	success-text-color: mapGet($palette, calPolyPomonaGreen),
+	warning-text-color: mapGet($palette, gambogeOrange)
 );

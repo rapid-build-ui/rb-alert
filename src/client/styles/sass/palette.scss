@@ -2,36 +2,38 @@
  * COLOR PALETTE
  ****************/
 $palette: (
-	// Transparent
+	// Common
 	trans: transparent,
+	black: #000,
+	white: #fff,
 
 	// Blues
-	blue:             #004085,
-	blueLight:        #b8daff,
-	xBlueLight:       #cce5ff,
+	darkCerulean:       #004085,
+	diamond:            #b8daff,
+	periwinkle:         #cce5ff,
 
 	// Greens
-	green:            #155724,
-	greenLight:       #c3e6cb,
-	xGreenLight:      #d4edda,
+	calPolyPomonaGreen: #155724,
+	teaGreen:           #c3e6cb,
+	gainsboro:          #d4edda,
 
 	// Greys
-	grey:             #383d41,
-	greyLight:        #d6d8db,
-	xGreyLight:       #e2e3e5,
+	blackOlive:         #383d41,
+	lightGray:          #d4d7db,
+	platinum:           #e2e3e5,
 
 	// Reds
-	red:              #721c24,
-	redLight:         #f5c6cb,
-	xRedLight:        #f8d7da,
+	prune:              #721c24,
+	teaRose:            #f5c6cb,
+	palePink:           #f8d7da,
 
 	// Turquoise
-	turquoise:        #0c5460,
-	turquoiseLight:   #bee5eb,
-	xTurquoiseLight:  #d1ecf1,
+	midnightGreen:      #0c5460,
+	blueLagoon:         #bee5eb,
+	azureishWhite:      #d1ecf1,
 
 	// Yellows
-	yellow:           #856404,
-	yellowLight:      #ffeeba,
-	xYellowLight:     #fff3cd
+	gambogeOrange:      #856404,
+	blond:              #ffeeba,
+	lemonChiffon:       #fff3cd
 );
